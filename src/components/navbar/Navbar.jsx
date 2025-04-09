@@ -1,5 +1,6 @@
 import './Navbar.scss'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 export default function Navbar() {
@@ -16,13 +17,21 @@ export default function Navbar() {
 
       <div className={`nav-container ${isOpen ? 'open' : ''}`}>
         <ul className="left-links">
-          <li>About</li>
-          <li>Services</li>
+          <li>
+            <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
+          </li>
+          <li>
+            <Link to="/services" onClick={() => setIsOpen(false)}>Services</Link>
+          </li>
         </ul>
 
         <ul className="right-links">
-          <li>Portfolio</li>
-          <li>Contact</li>
+          <li>
+            <Link to="/portfolio" onClick={() => setIsOpen(false)}>Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+          </li>
         </ul>
       </div>
     </nav>
