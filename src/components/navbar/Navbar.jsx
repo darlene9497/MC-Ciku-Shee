@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
-export default function Navbar() {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => setIsOpen(!isOpen)
 
@@ -37,3 +37,5 @@ export default function Navbar() {
     </nav>
   )
 }
+
+export default Navbar
