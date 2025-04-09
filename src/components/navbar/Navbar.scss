@@ -1,23 +1,59 @@
-nav {
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: $green-background;
     color: $text-primary;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 0.2em;
-    padding: 0.5em 0;
+    padding: 1em 0;
 
-    ul {
-        list-style-type: none;
+    .logo {
+        font-family: "Qwitcher Grypen", cursive;
+        font-weight: bold;
+        font-size: 2.5em;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+
+    .menu-icon {
+        display: none;
+        font-size: 1.2em;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .nav-container {
         display: flex;
-        gap: 11em;
+        justify-content: space-between;
+        width: 100%;
 
-        li {
-            font-size: 0.75em;
-            font-weight: 600;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: transform 0.3s ease, color 0.3s ease; 
+        .left-links,
+        .right-links {
+            display: flex;
+            gap: 10em;
+            list-style: none;
+
+            li {
+                font-size: 0.7em;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: transform 0.3s ease, color 0.3s ease;
+
+                &:hover {
+                    color: $text-olive;
+                    transform: translateY(-2.5px);
+                    text-shadow: 0.1em 0.1em 0.2em $text-olive;
+                }
+            }
         }
 
         li:first-child {
@@ -27,22 +63,52 @@ nav {
         li:last-child {
             margin-right: 8em;
         }
-
-        li:hover {
-            color: $text-olive;
-            transform: translateY(-2.5px);
-            text-shadow: 0.1em 0.1em 0.2em $text-olive;
-        }
-
-        li.active {
-            color: $text-olive;
-            font-weight: 800;
-        }
     }
 
-    .logo {
-        font-family: "Qwitcher Grypen", cursive;
-        font-weight: bold;
-        font-size: 2.5em;
+    @media (max-width: 768px) {
+        padding: 0.5em 1em;
+        margin-top: 0.5em;
+
+        .logo {
+            position: static;
+            transform: none;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+
+        .nav-container {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: $green-background;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5em;
+            padding: 1em;
+            display: none;
+
+            &.open {
+                display: flex;
+            }
+
+            li:first-child {
+                margin-left: 0;
+            }
+    
+            li:last-child {
+                margin-right: 0;
+            }
+
+            .left-links,
+            .right-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+                margin: 0;
+            }
+        }
     }
 }
