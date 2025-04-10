@@ -46,7 +46,7 @@
     }
 
     // phone responsiveness
-    @media (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         flex-direction: column;
         padding: 1em;
 
@@ -65,7 +65,7 @@
     }
 
     // tablet responsiveness
-    @media (max-width: 1024px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding-right: 0;
         
         .hero-text-box {
@@ -75,8 +75,8 @@
         }
         
         .hero-image {
-            margin-left: 200px;
-            max-width: 590px;
+            margin-left: 12.5em;
+            max-width: 36.875em;
             height: 400px;
         }
     }
