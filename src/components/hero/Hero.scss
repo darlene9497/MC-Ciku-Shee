@@ -44,4 +44,40 @@
             object-fit: cover;
         }
     }
+
+    // phone responsiveness
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 1em;
+
+        .hero-text-box {
+            position: static;
+            max-width: 100%;
+            padding: 1em;
+            margin: 0 auto;
+        }
+
+        .hero-image {
+            margin-left: 0;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    // tablet responsiveness
+    @media (max-width: 1024px) {
+        padding-right: 0;
+        
+        .hero-text-box {
+            left: 1%;
+            top: 60%;
+            max-width: 400px;
+        }
+        
+        .hero-image {
+            margin-left: 200px;
+            max-width: 590px;
+            height: 400px;
+        }
+    }
 }
