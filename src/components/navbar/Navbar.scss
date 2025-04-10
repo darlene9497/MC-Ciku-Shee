@@ -70,6 +70,7 @@
         }
     }
 
+    // phone responsiveness
     @media (max-width: 768px) {
         padding: 0.5em 1em;
         margin-top: 0.5em;
@@ -115,5 +116,24 @@
                 margin: 0;
             }
         }
+    }
+
+    // tablet responsiveness
+    @media (max-width: 1024px) {
+        .nav-container {
+            .left-links,
+            .right-links {
+                gap: 5em;
+            }
+
+            li:first-child {
+                margin-left: 4em;
+            }
+    
+            li:last-child {
+                margin-right: 4em;
+            }
+        }
+        
     }
 }
