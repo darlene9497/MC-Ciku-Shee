@@ -83,4 +83,39 @@
 			}
 		}
 	}
+
+	// phone responsiveness
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+
+		.text-box-section {
+			margin-top: 0;
+
+			h2 {
+				font-size: 2.5rem;
+			}
+
+			.about-text-box {
+				position: static;
+				width: 100%;
+				margin-top: 1rem;
+				padding: 1rem;
+			}
+		}
+	}
+
+	// tablet responsiveness
+	@media only screen and (min-width: 768px) and (max-width: 1023px) {
+        padding: 0.7rem;
+        
+		.text-box-section {
+            margin-top: 0;
+
+			.about-text-box {
+                max-width: 500px;
+			}
+		}
+	}
 }
