@@ -16,20 +16,3 @@ p {
     line-height: 2;
 }
 
-button {
-    background-color: $green-background;
-    color: $text-olive;
-    padding: 0.85em 2.2em;
-    border: none;
-    font-weight: bold;
-    font-size: 0.7em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.3s;
-    
-    &:hover {
-        background-color: transparent;
-        color: $text-secondary;
-        border: 1px solid $secondary-color;
-    }
-}

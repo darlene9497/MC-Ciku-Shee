@@ -4,6 +4,7 @@ import img1 from '../../assets/shee.jpeg'
 import img2 from '../../assets/shee5.jpeg'
 import img3 from '../../assets/shee6.jpeg'
 import img4 from '../../assets/shee7.jpeg'
+import CustomButton from '../Button'
 
 function Hero() {
     const images = [img1, img2, img3, img4]
@@ -32,7 +33,9 @@ function Hero() {
                     turpis mollis augue, condimentum volutpat lorem sem 
                     quis odio.
                 </p>
-                <button className="hero-btn">Book now</button>
+                <CustomButton onClick={() => console.log('Book now clicked')}>
+                    Book now
+                </CustomButton>
             </div>
             <div className="hero-image">
                 <img src={images[currentIndex]} alt="MC at event" />
