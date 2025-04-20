@@ -47,7 +47,7 @@
 
     // phone responsiveness
     @media only screen and (max-width: 768px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 1em;
 
         .hero-text-box {
@@ -59,7 +59,8 @@
 
         .hero-image {
             margin-left: 0;
-            max-width: 100%;
+            width: 100%;
+            aspect-ratio: 1 / 1;
             height: auto;
         }
     }
