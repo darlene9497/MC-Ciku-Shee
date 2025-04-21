@@ -9,8 +9,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0.2em;
     padding: 1.5em 0;
+    border-top: 3px solid $primary-color;
 
     .logo {
         font-family: "Qwitcher Grypen", cursive;
