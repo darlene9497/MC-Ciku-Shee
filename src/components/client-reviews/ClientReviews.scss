@@ -1,0 +1,75 @@
+.client-reviews {
+  padding: 4rem 1rem;
+
+  .reviews-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    h2 {
+      color: $text-secondary;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-left: 1rem;
+    }
+  }
+
+  .review-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 5rem 0 3rem;
+    flex-wrap: wrap;
+
+    .review-card {
+      position: relative;
+      background-color: $white-background;
+      border: 1px solid $color-black;
+      border-radius: 1rem;
+      padding: 2rem 1rem 1.5rem;
+      width: 500px;
+      text-align: left;
+
+      .review-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        top: -40px;
+        left: 1rem;
+        border: 3px solid $color-white
+      }
+
+      .review-text {
+        margin-top: 1.5rem;
+        font-weight: 600;
+        color: $color-gray
+      }
+
+      .review-name {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .review-next {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 0.4rem;
+    color: $secondary-color;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 2rem;
+
+    p {
+      margin: 0;
+    }
+  }
+}
