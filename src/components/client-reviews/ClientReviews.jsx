@@ -1,5 +1,5 @@
 import './ClientReviews.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import profile1 from '../../assets/profile1.jpg';
 import profile2 from '../../assets/profile2.jpg';
 import avatar from '../../assets/avatar.jpg';
@@ -24,16 +24,26 @@ const clients = [
 
 function ClientReviews() {
   const [startIndex, setStartIndex] = useState(0);
+  const [cardsPerView, setCardsPerView] = useState(2);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCardsPerView(window.innerWidth <= 768 ? 1 : 2);
+    };
+
+    handleResize(); // Set on mount
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleNext = () => {
-    const newIndex = (startIndex + 1) % clients.length;
-    setStartIndex(newIndex);
+    setStartIndex((prev) => (prev + cardsPerView) % clients.length);
   };
 
-  const visibleClients = [
-    clients[startIndex],
-    clients[(startIndex + 1) % clients.length],
-  ];
+  const visibleClients = [];
+  for (let i = 0; i < cardsPerView; i++) {
+    visibleClients.push(clients[(startIndex + i) % clients.length]);
+  }
 
   return (
     <section className="client-reviews">
@@ -43,7 +53,7 @@ function ClientReviews() {
             key={i}
             src="https://cdn.lordicon.com/uihwbzln.json"
             trigger="loop"
-            delay="1000"
+            delay="1500"
             colors="primary:#000000,secondary:#ffc738,tertiary:#000000"
             style={{ width: '25px', height: '25px' }}
           ></lord-icon>
@@ -70,7 +80,7 @@ function ClientReviews() {
         <lord-icon
           src="https://cdn.lordicon.com/whtfgdfm.json"
           trigger="loop"
-          delay="1000"
+          delay="1500"
           colors="primary:#000000"
           style={{ width: '25px', height: '25px' }}
         ></lord-icon>
