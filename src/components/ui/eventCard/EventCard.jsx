@@ -1,4 +1,3 @@
-// src/components/ui/EventCard.jsx
 import { Card, CardContent, Typography, Box } from '@mui/material'
 import { Link } from 'react-router-dom'
 

@@ -1,6 +1,6 @@
 import './AboutSection.scss'
-import image from '../../assets/shee3.jpeg'
-import CustomButton from '../Button'
+import image from '../../../assets/shee3.jpeg'
+import CustomButton from '../../Button'
 
 function AboutSection () {
   return (

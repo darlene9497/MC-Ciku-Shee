@@ -1,8 +1,8 @@
 import './ClientReviews.scss';
 import { useState, useEffect } from 'react';
-import profile1 from '../../assets/profile1.jpg';
-import profile2 from '../../assets/profile2.jpg';
-import avatar from '../../assets/avatar.jpg';
+import profile1 from '../../../assets/profile1.jpg';
+import profile2 from '../../../assets/profile2.jpg';
+import avatar from '../../../assets/avatar.jpg';
 
 const clients = [
   {
