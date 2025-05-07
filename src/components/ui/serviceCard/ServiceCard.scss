@@ -1,0 +1,119 @@
+.service-card {
+    position: relative;
+    background: url('../../../assets/shee4.jpeg') no-repeat center 30%;
+    background-size: cover;
+    height: 45vh;
+    width: 100%;
+    margin:  5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 2;
+    }
+
+    lord-icon {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        z-index: 3;
+    }
+
+    .content-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 60%;
+        z-index: 3;
+        color: $text-olive;
+        gap: 2rem;
+
+        .left-content, .right-content {
+            flex: 1;
+            p {
+                color: $text-olive;
+                font-weight: bold;
+            }
+        }
+
+        .center-line {
+            width: 2px;
+            height: 200px;
+            background-color: $olive-background;
+            margin: 0 2rem;
+            z-index: 3;
+        }
+    }
+
+    .button-container {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 3;
+    }
+}
+
+// tablet
+@media screen and (max-width: 992px) {
+    .service-card {
+        height: 30vh;
+
+        .content-wrapper {
+            width: 95%;
+            gap: 1rem;
+
+            .left-content, .right-content {
+                p {
+                    font-size: 0.85rem;
+                }
+            }
+
+            .center-line {
+                height: 180px;
+                margin: 0 1rem;
+            }
+        }
+    }
+}
+
+// mobile
+@media screen and (max-width: 768px) {
+    .service-card {
+        height: auto;
+        min-height: 70vh;
+        padding: 4rem 1rem;
+
+        .content-wrapper {
+            flex-direction: column;
+            height: auto;
+            gap: 2rem;
+            margin: 2rem 0;
+
+            .center-line {
+                width: 80%;
+                height: 2px;
+                margin: 1rem 0;
+            }
+        }
+
+        .button-container {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+        }
+
+        lord-icon {
+            left: 0;
+        }
+    }
+}

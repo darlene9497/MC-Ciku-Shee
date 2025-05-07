@@ -20,7 +20,7 @@ function EventCard({ title, subtitle, image, linkTo }) {
                         backgroundImage: `url(${image})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
-                        color: '#fff',
+                        color: '#ffffff',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -37,7 +37,7 @@ function EventCard({ title, subtitle, image, linkTo }) {
                         sx={{
                             position: 'absolute',
                             inset: 0,
-                            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
                             zIndex: 2,
                         }}
                     />
@@ -61,7 +61,7 @@ function EventCard({ title, subtitle, image, linkTo }) {
                         >
                             {title}
                         </Typography>
-                        <Typography variant="body2" sx={{ fontSize: '0.85rem', color: '#fff' }}>
+                        <Typography variant="body2" sx={{ fontSize: '0.85rem', color: '#ffffff' }}>
                             {subtitle}
                         </Typography>
                     </CardContent>
