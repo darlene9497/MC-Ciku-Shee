@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">Ciku Mwangi</div>
+      <Link to="/" className="logo" onClick={() => setIsOpen(false)}>Ciku Mwangi</Link>
 
       <div className="menu-icon" onClick={toggleMenu}>
         {isOpen ? <FaTimes /> : <FaBars />}
