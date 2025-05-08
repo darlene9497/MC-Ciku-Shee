@@ -26,7 +26,14 @@ const ContactForm = () => (
                 </div>
                 <div className="form-group">
                     <label>Phone Number<span>*</span></label>
-                    <input type="tel" required />
+                    <input
+                        type="tel"
+                        required
+                        placeholder="+254 712 345 678"
+                        pattern="^\+254\s\d{3}\s\d{3}\s\d{3}$"
+                        minLength={15}
+                        maxLength={15}
+                    />
                 </div>
             </div>
         </div>

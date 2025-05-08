@@ -43,15 +43,11 @@
             }
         }
 
-        option, placeholder {
-            font-size: 0.9rem;
-        }
-
         input, select, textarea {
             padding: 0.5rem;
             border: 1px solid $color-black;
             border-radius: 4px;
-            font-size: 1rem;
+            font-size: 0.8rem;
             background: $white-background;
             margin-bottom: 0.2rem;
             transition: border 0.2s;
