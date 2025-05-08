@@ -1,0 +1,104 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+
+    .contact-content {
+        flex: 1;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-family: "Qwitcher Grypen", cursive;
+            color: $text-secondary;
+            position: relative;
+            text-align: left;
+            display: inline-block;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 3px;
+                background-color: $olive-background;
+            }
+        }
+
+        .contact-image {
+            margin: 1.5rem 0 1rem 0;
+
+            img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+
+            p {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    text-align: center;
+
+                    &:last-child {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .contact-social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+
+            a {
+                font-size: 1.3rem;
+                color: $text-secondary;
+                transition: color 0.3s ease;
+                
+                &:hover {
+                    color: $olive-background;
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        flex: 2;
+    }
+
+    @media only screen and (max-width: 900px) {
+        padding: 0;
+        gap: 1rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding: 0.5rem;
+        gap: 1rem;
+        flex-direction: column;
+
+        .contact-content,
+        .contact-form {
+            padding: 0.5rem;
+            align-items: center;
+        }
+    }
+}
