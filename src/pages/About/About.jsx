@@ -1,8 +1,12 @@
 import AboutHero from "../../components/features/about-hero/AboutHero";
-
+import "./About.scss";
+import ClientsSection from "../../components/features/clients-section/ClientsSection";
 const About = () => {
   return (
-    <AboutHero />
+    <>
+        <AboutHero />
+        <ClientsSection />
+    </>
   );
 };
 

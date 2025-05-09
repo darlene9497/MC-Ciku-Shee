@@ -1,0 +1,53 @@
+.clients-section {
+    text-align: center;
+    padding: 2.5rem 1rem 2rem 1rem;
+
+    h2 {
+        color: $text-secondary;
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        letter-spacing: 0.02em;
+    }
+
+    &__carousel {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__logos {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        animation: scroll-logos 20s linear infinite;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 3rem;
+
+        img, svg {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin: 0 1rem;
+
+            img, svg {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+
+    @keyframes scroll-logos {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+}
