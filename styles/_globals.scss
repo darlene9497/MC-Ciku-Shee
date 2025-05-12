@@ -8,7 +8,13 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: $background-color;
+    background: repeating-radial-gradient(
+        circle, 
+        rgba(0, 0, 0, 0.015) 0, 
+        rgba(0, 0, 0, 0.015) 1px,
+        transparent 2px,
+        transparent 4px
+    ), $primary-color;
     overflow-x: hidden;
 }
 
