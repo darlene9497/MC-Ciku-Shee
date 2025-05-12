@@ -35,3 +35,60 @@
         }
     }
 }
+
+.fast-facts-section {
+    padding: 3rem 0;
+    margin: 0 auto;
+    text-align: center;
+
+    .fast-facts-title {
+        color: $text-secondary;
+        margin-bottom: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    .fast-facts-grid {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+
+    .fast-fact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fast-fact-number {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        line-height: 1;
+    }
+
+    .fast-fact-label {
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .clients {
+        color: #f5a623;
+    }
+    .trips {
+        color: #e57373;
+    }
+    .plants {
+        color: #29b6f6;
+    }
+    .ducks {
+        color: #8bc34a;
+    }
+    
+    @media (max-width: 768px) {
+        .fast-facts-grid {
+            flex-direction: column;
+        }
+    }
+}
