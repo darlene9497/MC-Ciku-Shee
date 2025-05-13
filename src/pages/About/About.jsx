@@ -1,6 +1,8 @@
 import AboutHero from "../../components/features/about-hero/AboutHero";
 import "./About.scss";
 import ClientsSection from "../../components/features/clients-section/ClientsSection";
+import ICantGetEnough from "../../components/features/about-section/ICantGetEnough";
+
 const About = () => {
   return (
     <>
@@ -46,6 +48,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <ICantGetEnough />
     </>
   );
 };

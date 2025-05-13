@@ -81,7 +81,7 @@ function ClientReviews() {
           src="https://cdn.lordicon.com/whtfgdfm.json"
           trigger="loop"
           delay="1500"
-          colors="primary:#000000"
+          colors="primary:#052b05"
           style={{ width: '25px', height: '25px' }}
         ></lord-icon>
       </div>

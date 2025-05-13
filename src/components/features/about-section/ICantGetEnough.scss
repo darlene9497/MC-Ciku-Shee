@@ -1,0 +1,101 @@
+.cant-get-enough-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: stretch;
+    justify-content: center;
+    margin: 5rem auto;
+
+    .cge-left {
+        max-width: 350px;
+    }
+    
+    .cge-title {
+        font-family: "Qwitcher Grypen", cursive;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        .cge-title-break {
+            display: inline;
+        }
+    }
+
+    .cge-fact {
+        margin-bottom: 2rem;
+
+        h4 {
+            font-weight: 600;
+            color: $text-secondary;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .cge-underline {
+        width: 100px;
+        height: 4px;
+        background-color: $olive-background;
+        margin-top: 0.75rem;
+        border-radius: 2px;
+    }
+
+    .cge-right {
+        display: flex;
+
+        .cge-img-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 0.5rem;
+            width: 100%;
+            max-width: 450px;
+
+            .cge-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .cge-img-lg {
+                grid-row: span 2;
+                grid-column: 1;
+                height: 100%;
+                max-height: 100%;
+            }
+
+            .cge-img-sm:nth-child(2),
+            .cge-img-sm:nth-child(3) {
+                grid-column: 2;
+                max-height: 220px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cant-get-enough-section {
+        flex-direction: column;
+        margin: 1rem;
+        gap: 1rem;
+    }
+
+    .cge-left, .cge-right {
+        max-width: 100%;
+    }
+
+    .cge-title {
+        .cge-title-break {
+            display: none !important;
+        }
+    }
+
+    .cge-img-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .cant-get-enough-section {
+        flex-wrap: nowrap;
+        margin: 5rem 1rem;
+        gap: 1rem;
+    }
+}
