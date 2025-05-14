@@ -1,5 +1,5 @@
 import "./ContactForm.scss";
-import CustomButton from "../../Button";
+import CustomButton from "../../common/Button";
 import { useState } from "react";
 
 const hours = Array.from({ length: 12 }, (_, i) => String(i + 1).padStart(2, '0'));

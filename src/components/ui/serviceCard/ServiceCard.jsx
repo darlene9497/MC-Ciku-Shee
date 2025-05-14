@@ -1,5 +1,5 @@
 import './ServiceCard.scss'
-import CustomButton from '../../Button'
+import CustomButton from '../../common/Button'
 
 function ServiceCard() {
   return (
