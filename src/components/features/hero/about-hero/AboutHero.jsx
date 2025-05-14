@@ -1,5 +1,5 @@
 import './AboutHero.scss';
-import aboutHeroImage from '../../../assets/shee2.jpeg';
+import aboutHeroImage from '../../../../assets/shee2.jpeg';
 
 const AboutHero = () => (
     <section className="about-hero">

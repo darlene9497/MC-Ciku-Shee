@@ -1,4 +1,4 @@
-import AboutHero from "../../components/features/about-hero/AboutHero";
+import AboutHero from "../../components/features/hero/about-hero/AboutHero";
 import "./About.scss";
 import ClientsSection from "../../components/features/clients-section/ClientsSection";
 import ICantGetEnough from "../../components/features/about-section/ICantGetEnough";
