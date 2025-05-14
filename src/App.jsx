@@ -5,6 +5,7 @@ import Footer from './components/layout/footer/Footer'
 import Contact from './pages/Contact/Contact'
 import About from './pages/About/About'
 import Services from './pages/Services/Services'
+import Portfolio from './pages/Portfolio/Portfolio'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </main>
     <Footer />
