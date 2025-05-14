@@ -1,9 +1,9 @@
 import './Hero.scss'
 import { useState, useEffect} from 'react'
-import img1 from '../../../assets/shee.jpeg'
-import img2 from '../../../assets/shee5.jpeg'
-import img3 from '../../../assets/shee6.jpeg'
-import img4 from '../../../assets/shee7.jpeg'
+import img1 from '../../../../assets/shee10.jpeg'
+import img2 from '../../../../assets/shee5.jpeg'
+import img3 from '../../../../assets/shee6.jpeg'
+import img4 from '../../../../assets/shee7.jpeg'
 import CustomButton from '../../../common/Button'
 
 function Hero() {
