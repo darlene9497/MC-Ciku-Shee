@@ -4,8 +4,8 @@
   font-family: "Qwitcher Grypen", cursive;
   color: $text-secondary;
   position: relative;
-  text-align: left;
-  display: inline-block;
+  text-align: center;
+  display: block;
 
   &::after {
     content: '';
