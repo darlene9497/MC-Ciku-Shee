@@ -12,12 +12,24 @@
     .memorable-moments {
         margin: 3rem 0;
 
-        .memorable-moments-title {
+        .memorable-title-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            justify-content: center;
             margin-bottom: 5rem;
-            color: $text-secondary;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 1.2rem;
+
+            .memorable-moments-title {
+                color: $text-secondary;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+            }
+
+            .memorable-moments-animation {
+                display: flex;
+                align-items: center;
+            }
         }
         
         .memorable-moments-images {

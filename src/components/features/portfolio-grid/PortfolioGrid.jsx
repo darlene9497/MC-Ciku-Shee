@@ -15,7 +15,19 @@ import image13 from '../../../assets/shee2.jpeg';
 const PortfolioGrid = () => {
     return (
         <section className="portfolio-grid">
-            <h2 className="gallery-title">Photo Gallery</h2>
+            <div className="gallery-title-row">
+                <h2 className="gallery-title">Photo Gallery</h2>
+                <span className="gallery-animation">
+                <lord-icon
+                    src="https://cdn.lordicon.com/wsaaegar.json"
+                    trigger="loop"
+                    delay="1000"
+                    stroke="bold"
+                    colors="primary:#000000,secondary:#cc9800"
+                    style={{ width: '40px', height: '40px' }}>
+                </lord-icon>
+                </span>
+            </div>
             <div className="gallery-grid">
                 <img src={image1} alt="Gallery 1" className="gallery-item" />
                 <img src={image2} alt="Gallery 2" className="gallery-item" />

@@ -32,7 +32,19 @@ const Portfolio = () => {
                 eleifend massa. Nunc porttitor massa felis, quis iaculis ipsum cursus at.
             </p>
             <div className="memorable-moments">
-                <h2 className="memorable-moments-title">Signature Moments</h2>
+                <div className="memorable-title-row">
+                    <h2 className="memorable-moments-title">Signature Moments</h2>
+                    <span className="memorable-moments-animation">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/ijsqrapz.json"
+                            trigger="loop"
+                            delay="1000"
+                            stroke="bold"
+                            colors="primary:#000000,secondary:#cc9800"
+                            style={{ width: '35px', height: '35px' }}>
+                        </lord-icon>
+                    </span>
+                </div>
                 <div className="memorable-moments-images" style={{ position: "relative" }}>
                     <button className="carousel-arrow left" onClick={prevImage}>
                         <lord-icon

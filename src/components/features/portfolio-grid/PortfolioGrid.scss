@@ -3,12 +3,25 @@
     max-width: 1200px;
     margin: 5rem auto;
 
-    .gallery-title {
+    .gallery-title-row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
         margin-bottom: 5rem;
-        color: $text-secondary;
-        font-weight: 600;
-        text-transform: uppercase;
-        font-size: 1.2rem;
+
+        .gallery-title {
+            color: $text-secondary;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+    
+        .gallery-animation {
+            display: flex;
+            align-items: center;
+        }
     }
 
     .gallery-grid {
@@ -41,6 +54,9 @@
             .gallery-item {
                 margin-bottom: 0.5rem;
             }
+        }
+        .gallery-title-row {
+            margin-bottom: 2rem;
         }
     }
 }
