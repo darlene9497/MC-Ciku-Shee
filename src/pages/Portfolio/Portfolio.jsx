@@ -7,6 +7,7 @@ import img3 from "../../assets/shee12.jpeg";
 import img4 from "../../assets/shee14.jpeg";
 import img5 from "../../assets/shee4.jpeg";
 import img6 from "../../assets/shee8.jpeg";
+import PortfolioGrid from "../../components/features/portfolio-grid/PortfolioGrid";
 
 const images = [img1, img2, img3, img4, img5, img6];
 const Portfolio = () => {
@@ -56,6 +57,7 @@ const Portfolio = () => {
                     </button>
                 </div>
             </div>
+            <PortfolioGrid />
         </div>
     );
 };
