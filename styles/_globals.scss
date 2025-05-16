@@ -16,6 +16,7 @@ body {
         transparent 4px
     ), $primary-color;
     overflow-x: hidden;
+    user-select: none;
 }
 
 p {

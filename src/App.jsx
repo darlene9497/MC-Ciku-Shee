@@ -6,12 +6,14 @@ import Contact from './pages/Contact/Contact'
 import About from './pages/About/About'
 import Services from './pages/Services/Services'
 import Portfolio from './pages/Portfolio/Portfolio'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <>
+    <ScrollToTop />
     <Navbar />
-    <main style={{ paddingTop: '4em' }}>
+    <main style={{ paddingTop: '5em' }}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
