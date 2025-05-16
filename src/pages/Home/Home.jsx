@@ -6,11 +6,11 @@ import ServiceCard from "../../components/ui/serviceCard/ServiceCard"
 function Home() {
   return (
     <>
-        <Hero />
-        <ServicesSection />
-        <AboutSection />
-        <ClientReviews />
-        <ServiceCard />
+      <Hero />
+      <ServicesSection />
+      <AboutSection />
+      <ClientReviews />
+      <ServiceCard />
     </>
   )
 }

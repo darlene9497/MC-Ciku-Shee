@@ -21,12 +21,14 @@ const allClients = [...clients, ...clients];
 const ClientsSection = () => (
     <section className="clients-section">
         <h2>Clients I've worked with</h2>
-        <div className="clients-section__logos">
-            {allClients.map((client, idx) => (
-                <div className="clients-section__logo" key={client.name + idx}>
-                    <img src={client.logo} alt={client.name + ' logo'} />
-                </div>
-            ))}
+        <div className="clients-section__carousel">
+            <div className="clients-section__logos">
+                {allClients.map((client, idx) => (
+                    <div className="clients-section__logo" key={client.name + idx}>
+                        <img src={client.logo} alt={`${client.name} logo`} />
+                    </div>
+                ))}
+            </div>
         </div>
     </section>
 );
