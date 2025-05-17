@@ -1,6 +1,7 @@
 import './AboutSection.scss'
 import image from '../../../assets/shee3.jpeg'
 import CustomButton from '../../common/Button'
+import { Link } from 'react-router-dom'
 
 function AboutSection () {
   return (
@@ -38,9 +39,11 @@ function AboutSection () {
                     non magna vestibulum facilisis quis nec nulla. Maecenas suscipit 
                     eleifend massa. Nunc porttitor massa felis, quis iaculis ipsum cursus at.
                 </p>
-                <CustomButton onClick={() => console.log('Button clicked')}>
-                    Meet Shee
-                </CustomButton>
+                <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <CustomButton>
+                        Meet Shee
+                    </CustomButton>
+                </Link>
             </div>
         </div>
     </div>

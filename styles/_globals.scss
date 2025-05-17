@@ -20,7 +20,7 @@ body {
 }
 
 p {
-    font-size: clamp(0.95rem, 2vw, 1.125rem);
+    font-size: clamp(0.95rem, 1.2vw, 1.125rem);
     line-height: 2;
     color: $paragraph-color;
 }
