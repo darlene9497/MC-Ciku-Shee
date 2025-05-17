@@ -39,7 +39,7 @@ function AboutSection () {
                     non magna vestibulum facilisis quis nec nulla. Maecenas suscipit 
                     eleifend massa. Nunc porttitor massa felis, quis iaculis ipsum cursus at.
                 </p>
-                <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>
                     <CustomButton>
                         Meet Shee
                     </CustomButton>
