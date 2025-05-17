@@ -20,12 +20,8 @@ body {
 }
 
 p {
-    font-size: 0.9rem;
+    font-size: clamp(0.95rem, 2vw, 1.125rem);
     line-height: 2;
     color: $paragraph-color;
-
-    @media (max-width: 768px) {
-        font-size: 1rem;
-    }
 }
 
