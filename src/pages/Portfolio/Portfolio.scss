@@ -40,7 +40,6 @@
             justify-content: center;
             gap: 2.5rem;
             position: relative;
-            min-height: 340px;
         }
 
         .memorable-moments-images img {
@@ -93,7 +92,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        padding: 2rem 1rem;
+        padding: 1rem;
 
         .portfolio-description {
             padding: 1rem;
@@ -101,6 +100,11 @@
 
         .memorable-moments {
             margin: 4rem 0;
+
+            .memorable-moments-images img:nth-child(3) {
+                width: 200px;
+                height: 300px;
+            }
         }
     }
 }

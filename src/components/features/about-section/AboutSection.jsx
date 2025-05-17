@@ -24,10 +24,10 @@ function AboutSection () {
                 <h4>You found your host!</h4>
                 <div className="text-title">
                     <p>MC</p>
-                    <span>.</span>
-                    <p>Entertainer</p>
-                    <span>.</span>
+                    <span></span>
                     <p>Professional hype woman</p>
+                    <span></span>
+                    <p>Entertainer</p>
                 </div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis 

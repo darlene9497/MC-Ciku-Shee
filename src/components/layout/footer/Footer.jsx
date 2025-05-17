@@ -1,5 +1,6 @@
 import './Footer.scss'
 import { FaLinkedin, FaInstagram, FaFacebook, FaTiktok, FaEnvelope } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -14,13 +15,13 @@ function Footer() {
           <a href="#"><FaEnvelope /></a>
         </div>
         <nav className="footer-nav">
-          <a href="#">About</a>
+          <Link to="/about">About</Link>
           <span>|</span>
-          <a href="#">Services</a>
+          <Link to="/services">Services</Link>
           <span>|</span>
-          <a href="#">Portfolio</a>
+          <Link to="/portfolio">Portfolio</Link>
           <span>|</span>
-          <a href="#">Contact</a>
+          <Link to="/contact">Contact</Link>
         </nav>
         <div className="footer-backtotop">
           <a href="#top">

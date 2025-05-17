@@ -3,7 +3,7 @@
 	align-items: flex-start;
 	justify-content: center;
 	gap: 2rem;
-	padding: 2rem;
+	padding: 2rem 0;
 	flex-wrap: wrap;
 	position: relative;
 	max-width: 1290px;
@@ -67,10 +67,20 @@
 				text-transform: uppercase;
 				font-size: 0.75rem;
 				margin-bottom: 1rem;
+				align-items: center;
 
 				p {
 					margin: 0;
 					padding: 0;
+				}
+
+				span {
+					display: inline-block;
+					width: 6px;
+					height: 6px;
+					background-color: $paragraph-color;
+					border-radius: 50%;
+					margin: 0 5px;
 				}
 			}
 
@@ -91,8 +101,13 @@
 		align-items: center;
 		padding: 1rem;
 
+		.image-container {
+			max-width: 300px;
+		}
+
 		.text-box-section {
 			margin-top: 0;
+			width: 100%;
 
 			h2 {
 				font-size: 2.5rem;
@@ -103,6 +118,18 @@
 				width: 100%;
 				margin-top: 1rem;
 				padding: 1rem;
+
+				.text-title {
+					gap: 10px;
+
+					p {
+						font-size: 0.75rem;
+					}
+
+					span {
+						display: none;
+					}
+				}
 			}
 		}
 	}

@@ -95,8 +95,8 @@
             background-color: $green-background;
             flex-direction: column;
             align-items: center;
-            gap: 1.5em;
-            padding: 1em;
+            gap: 1.5rem;
+            padding: 1.5em;
             display: none;
 
             &.open {
@@ -115,7 +115,7 @@
             .right-links {
                 flex-direction: column;
                 align-items: center;
-                gap: 1em;
+                gap: 1.5rem;
                 margin: 0;
             }
         }
