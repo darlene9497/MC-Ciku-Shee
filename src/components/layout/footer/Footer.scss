@@ -134,6 +134,8 @@
 
 
     @media (max-width: 768px) {
+        padding: 1rem 0.6rem 0.5rem;
+
         .footer-logo {
             font-size: 3em;
         }
@@ -145,6 +147,10 @@
     
         .footer-bottom {
             font-size: 0.75rem;
+
+            .footer-credit {
+                font-size: 0.7rem;
+            }
         }
     }
 }
