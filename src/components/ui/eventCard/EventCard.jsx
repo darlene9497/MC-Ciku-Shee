@@ -15,8 +15,11 @@ function EventCard({ title, subtitle, image, linkTo }) {
                 <Card
                     sx={{
                         position: 'relative',
-                        height: 250,
-                        width: 250,
+                        width: '100%',
+                        height: '100%',
+                        maxWidth: { xs: 180, sm: 200, md: 220, lg: 250 },
+                        maxHeight: { xs: 180, sm: 200, md: 220, lg: 250 },
+                        aspectRatio: '1 / 1',
                         backgroundImage: `url(${image})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',

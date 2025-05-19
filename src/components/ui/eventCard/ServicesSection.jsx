@@ -16,7 +16,7 @@ function ServicesSection() {
         <Box
         sx={{
             display: 'flex',
-            gap: 8,
+            gap: { xs: 1, sm: 2, md: 6 },
             flexWrap: { xs: 'nowrap', md: 'wrap' },
             justifyContent: { xs: 'flex-start', md: 'center' },
             scrollSnapType: { xs: 'x mandatory', md: 'none' },

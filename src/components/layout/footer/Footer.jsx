@@ -1,12 +1,18 @@
-import './Footer.scss'
-import { FaLinkedin, FaInstagram, FaFacebook, FaTiktok, FaEnvelope } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import './Footer.scss';
+import {
+  FaLinkedin,
+  FaInstagram,
+  FaFacebook,
+  FaTiktok,
+  FaEnvelope,
+} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-logo">Ciku Mwangi</div>
-      <div className="footer-row">
+      <div className="footer-top">
+        <div className="footer-logo">Ciku Mwangi</div>
         <div className="footer-social">
           <a href="#"><FaLinkedin /></a>
           <a href="#"><FaInstagram /></a>
@@ -14,15 +20,28 @@ function Footer() {
           <a href="#"><FaTiktok /></a>
           <a href="#"><FaEnvelope /></a>
         </div>
+      </div>
+
+      <div className="footer-middle">
         <nav className="footer-nav">
           <Link to="/about">About</Link>
-          <span>|</span>
           <Link to="/services">Services</Link>
-          <span>|</span>
           <Link to="/portfolio">Portfolio</Link>
-          <span>|</span>
           <Link to="/contact">Contact</Link>
         </nav>
+        <div className="footer-legal">
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/terms">Terms & Conditions</Link>
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <div className="footer-credit">
+          Website made with <span className="footer-heart">&#10084;</span> by Darlene Nyambura
+        </div>
+        <div className="footer-copy">
+          &copy; {new Date().getFullYear()} Ciku (Shee) Mwangi. All rights reserved.
+        </div>
         <div className="footer-backtotop">
           <a href="#top">
             <span className="circle"><span className="arrow-up">&#8593;</span></span>
@@ -30,16 +49,8 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="footer-bottom">
-        <div className="footer-copyright">
-          Copyright &copy; {new Date().getFullYear()} Ciku (Shee) Mwangi
-        </div>
-        <div className="footer-credit">
-          Website made with <span className="footer-heart">&#10084;</span> by Darlene Nyambura
-        </div>
-      </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
