@@ -37,7 +37,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <div className="footer-credit">
-          Website made with <span className="footer-heart">&#10084;</span> by <a href="https://www.linkedin.com/in/darlene-n/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>Darlene Nyambura</a>
+          Website made with <span className="footer-heart">&#10084;</span> by <a href="https://www.linkedin.com/in/darlene-n/" target="_blank" rel="noopener noreferrer">Darlene Nyambura</a>
         </div>
         <div className="footer-copy">
           &copy; {new Date().getFullYear()} Ciku (Shee) Mwangi. All rights reserved.
