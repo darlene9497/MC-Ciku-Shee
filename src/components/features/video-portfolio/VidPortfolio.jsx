@@ -6,10 +6,10 @@ const VidPortfolio = () => {
     const [videosPerView, setVideosPerView] = useState(2);
 
     const videos = [
-        'https://www.youtube.com/embed/-6ETOtuq37o',
-        'https://www.youtube.com/embed/QPb5lpO874Q',
-        'https://www.youtube.com/embed/QlRpyo8TEiw',
-        'https://www.youtube.com/embed/UGFCbmvk0vo'
+        'https://www.youtube.com/embed/',
+        'https://www.youtube.com/embed/',
+        'https://www.youtube.com/embed/',
+        'https://www.youtube.com/embed/'
     ];
 
     useEffect(() => {

@@ -7,6 +7,7 @@ import About from './pages/About/About'
 import Services from './pages/Services/Services'
 import Portfolio from './pages/Portfolio/Portfolio'
 import ScrollToTop from './components/ScrollToTop'
+import FloatingWhatsApp from './components/FloatingWhatsapp'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       </Routes>
     </main>
     <Footer />
+    <FloatingWhatsApp />
     </>
   )
 }
