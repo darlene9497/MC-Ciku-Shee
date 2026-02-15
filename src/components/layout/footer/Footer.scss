@@ -1,10 +1,14 @@
 .footer {
-    max-width: 1290px;
     margin: 5rem auto 0;
     padding: 2rem 1.2rem 0.5rem;
     background: $white-background;
     color: $text-secondary;
     font-family: 'Cormorant Garamond', serif;
+
+    .footer-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 
     .footer-logo {
         font-family: "Qwitcher Grypen", cursive;
