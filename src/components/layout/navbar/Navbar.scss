@@ -18,7 +18,7 @@
         margin: 0 auto;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         position: relative;
     }
@@ -29,11 +29,11 @@
         font-size: 2.5em;
         position: absolute;
         left: 50%;
-        top: 10%;
         transform: translateX(-50%);
         white-space: nowrap;
         text-decoration: none;
         color: $text-primary;
+        z-index: 1002;
     }
 
     .menu-icon {
@@ -41,6 +41,8 @@
         font-size: 1.2em;
         cursor: pointer;
         z-index: 1001;
+        position: absolute;
+        right: 1em;
     }
 
     .nav-menu {
@@ -89,6 +91,7 @@
 
         .nav-container {
             padding: 0 1em;
+            justify-content: space-between;
         }
 
         .logo {
@@ -99,6 +102,7 @@
 
         .menu-icon {
             display: block;
+            position: static;
         }
 
         .nav-menu {
